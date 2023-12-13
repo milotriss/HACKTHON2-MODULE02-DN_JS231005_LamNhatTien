@@ -1,0 +1,39 @@
+.addReview {
+    padding: 20px;
+    width: 23%;
+    height: 200px;
+    border-radius: 30px;
+    background-color: #BFE7C1;
+    color: #000;
+}
+.addReview .addGroup {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.addReview .addGroup textarea {
+    border: none;
+    background-color: transparent;
+    height: 70%;
+}
+.addReview .addGroup .addActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addReview .addGroup .addActions .addAction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #2970BC;
+    font-weight: 700;
+}
+.addReview .addGroup .addActions .addAction .iconAdd {
+    font-size: 20px;
+}
+
+
