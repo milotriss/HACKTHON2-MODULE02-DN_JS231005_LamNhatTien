@@ -12,13 +12,17 @@ const Add = (props:PropsAdd):JSX.Element => {
     console.log(content);
     
     const handleAddReview = () :void =>{
-        const newReview:Review = {
-            id: Math.random() * 100,
-            content: content,
-            date: dateUi
+        if (content.length === 0) {
+            alert("Please enter a review")
+        }else{
+            const newReview:Review = {
+                id: Math.random() * 100,
+                content: content,
+                date: dateUi
+            }
+            props.addReview(newReview)
+            setContent('')
         }
-        props.addReview(newReview)
-        setContent('')
     }
 
 
