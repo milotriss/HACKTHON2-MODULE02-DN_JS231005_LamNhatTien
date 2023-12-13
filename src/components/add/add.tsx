@@ -22,6 +22,7 @@ const Add = (props:PropsAdd):JSX.Element => {
             }
             props.addReview(newReview)
             setContent('')
+            setCount(200)
         }
     }
 
