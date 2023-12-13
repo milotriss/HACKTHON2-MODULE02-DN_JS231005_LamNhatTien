@@ -2,6 +2,7 @@ import "./header.css";
 import { TbSunMoon } from "react-icons/tb";
 import { IoSearch } from "react-icons/io5";
 const Header = (): JSX.Element => {
+
   return (
     <header>
       <div className="headerTitle">
@@ -9,7 +10,9 @@ const Header = (): JSX.Element => {
         <TbSunMoon className="iconThemes" />
       </div>
       <div className="search">
-        <IoSearch className="iconSearch"/>
+        <IoSearch
+        className="iconSearch"
+        />
         <input placeholder="Search here ..." type="text" />
       </div>
     </header>

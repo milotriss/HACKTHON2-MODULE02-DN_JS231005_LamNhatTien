@@ -1,7 +1,7 @@
 import './add.css'
 import { FaArrowUp } from "react-icons/fa6";
-import { PropsAdd } from '../interfaces/interfaces';
-import {Review} from '../interfaces/interfaces'
+import { PropsAdd } from '../../interfaces/interfaces';
+import {Review} from '../../interfaces/interfaces'
 import { ChangeEvent, useState } from 'react';
 import dateUi from "../../date"
 

@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from './components/header/header';
 import Main from './components/main/main';
-import {Review} from './components/interfaces/interfaces'
+import {Review} from './interfaces/interfaces'
 
 function App() {
   const [review, setReview] = useState<Review[]>([])
 
-  
+
   
   const addReview = (review:Review):void => {
     setReview((prev:Review[]) => [...prev, review])

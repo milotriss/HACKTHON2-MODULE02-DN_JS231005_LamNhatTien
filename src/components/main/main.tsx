@@ -1,7 +1,7 @@
 import Add from '../add/add';
 import './main.css'
 import { FaTrashAlt } from "react-icons/fa";
-import { PropsReview, Review } from '../interfaces/interfaces';
+import { PropsReview, Review } from '../../interfaces/interfaces';
 
 
 const Main = (props:PropsReview) => {
