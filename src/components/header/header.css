@@ -1,0 +1,39 @@
+header {
+    background-color: #494949;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .iconHeader {
+    font-size: 100px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+header .iconHeader:hover {
+    background-color: #fff;
+    color: #494949;
+    border-radius: 35px;
+}
+header .iconHeader:hover + .countUi {
+    background-color: #494949;
+    color: #fff;
+}
+header .countUi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: red;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    top: -15px;
+    right: 35px;
+    border: 2px solid #494949;
+}

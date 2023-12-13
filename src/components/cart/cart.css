@@ -1,0 +1,108 @@
+.cartOverlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.cartOverlay .cart {
+    position: fixed;
+    top: 0;
+    right: 300px;
+    left: 300px;
+    height: 600px;
+    background-color: #000;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    padding: 30px;
+    animation: down 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) ;
+}
+.cartOverlay .cart h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    height: 10%;
+}
+.cartOverlay .cart .listCarts {
+    overflow-y: scroll;
+    margin: 20px 0;
+    height: 75%
+}
+.cartOverlay .cart .listCarts .cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    background-color: #494949;
+    padding-right: 30px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px 0;
+    color: #fff;
+}
+.cartOverlay .cart .listCarts .cartItem img {
+    object-fit: cover;
+    width: 300px;
+}
+.cartOverlay .cart .listCarts .cartItem p {
+    font-size: 20px;
+    font-weight: 600;
+}
+.cartOverlay .cart .listCarts .cartItem .cartQuantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.cartOverlay .cart .listCarts .cartItem .cartQuantity span {
+    font-size: 20px;
+}
+.cartOverlay .cart .listCarts .cartItem .cartQuantity button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    transition: 0.3s;
+}
+.cartOverlay .cart .listCarts .cartItem .cartQuantity button:hover {
+    background: linear-gradient(90deg, #999, #555);
+    transform: scale(1.2);
+}
+.cartOverlay .cart .listCarts .cartItem .iconListCart {
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cartOverlay .cart .listCarts .cartItem .iconListCart:hover {
+    transform: scale(1.2);
+}
+
+.cartOverlay .cart .btnCart {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.cartOverlay .cart .btnCart button {
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    transition: 0.3s;
+}
+.cartOverlay .cart .btnCart button:first-child:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: #fff;
+    transform: scale(1.09);
+}
+.cartOverlay .cart .btnCart button:last-child:hover {
+    background-color: rgba(4, 170, 1, 0.5);
+    color: #fff;
+    transform: scale(1.09);
+}

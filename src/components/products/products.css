@@ -1,0 +1,119 @@
+.productGroup {
+    background-color: #494949;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    gap: 50px;
+}
+.productGroup .products {
+    background-color: #1a1a1a;
+    width: 25%;
+    height: 80%;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.slogan {
+    height: 5%;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+}
+.productGroup .products:hover {
+    transform: scale(1.09);
+}
+.productGroup .products:hover img {
+    opacity: 0.1;
+}
+.productGroup .products .productsInfo {
+    width: 100%;
+    position: relative;
+    height: 10%;
+}
+.productGroup .products img {
+    object-fit: contain;
+    height: 85%;
+    width: 100%;
+    transition: 0.3s;
+}
+.productGroup .products .productsInfo .productsTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+
+}
+.productGroup .products .productsInfo .productsTitle .iconProductsTitle{
+    font-size: 20px;
+    color: #fff;
+}
+.productGroup .products .productsInfo .productsTitle .productsName {
+    color: #fff;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.productGroup .products:hover .productsDesc {
+    display: block;
+}
+.productGroup .products .productsDesc {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    text-align: justify;
+    padding:20px 30px 40px;
+    background-color: #000;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    animation: up 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) ;
+}
+
+.productGroup .products .productsDesc p {
+    font-size: 16px;
+    color: #f3cccc;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.productGroup .products .productsDesc .productsAction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.productGroup .products .productsDesc .productsAction .productsOpenAdd {
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+}
+.productGroup .products .productsDesc .productsAction .productsPrice {
+    font-weight: 600;
+    font-size: 18px;
+}
+.productGroup .products .productsDesc .productsAction .productsAdd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+.productGroup .products .productsDesc .productsAction .productsAdd .iconProductsAdd {
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.5;
+}
+.productGroup .products .productsDesc .productsAction .productsAdd .iconProductsAdd:hover {
+    transform: scale(2);
+    opacity: 1;
+}
+
+
